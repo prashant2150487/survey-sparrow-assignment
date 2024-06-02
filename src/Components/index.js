@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import BarChart from './BarChart';
 
 const LayOut = () => {
@@ -15,7 +15,7 @@ const LayOut = () => {
             <div className="shadow-lg p-6 bg-black">
                 <div className='flex text-white'>
                     <div style={{ writingMode: 'vertical-lr', textOrientation: 'mixed', textAlign: 'center' }}>
-                        <span className="vertical text-blue-600 font-bold">X-Axis:Rating Scale </span>
+                        <span className="vertical text-blue-600 font-bold">No. of Ratings</span>
                     </div>
                     <BarChart data={ratings} maxCount={maxCount} />
                 </div>
